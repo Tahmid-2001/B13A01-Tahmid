@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 1) Navbar section (initial part of webpage)-->
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo-navbar.png" alt="Knowledge Vault logo" class="navbar-logo">
+            <!-- For nav links, ul and li was used -->
+            <ul class="nav-links">
+                <li><a href="#" class = "nav">Features</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Why it's different</a></li>
+            </ul>
+
+            <button class="btn-nav">Get early access</button>
+        </nav>
+    </header>
+
+    <!-- 2) Banner-->
+    <section id ="banner">
+            <!--
+            
+            CAUTION!!
+            <img src="assets/hero-bg.png" class="hero-bg">
+            
+            This line wont work as it makes the background image appear above the text (behave like content).
+            We need it to be in the background of the section. So that it can overlay with the text. 
+
+            Thus we use div with class "hero-bg" in CSS to set the background image for the section. The <div> 
+            element is a block-level container that can be styled with CSS to hold the background image.
+            In short, the <div class = "hero-bg"> becomes the background via CSS, not HTML.
+            -->
+        <div class ="hero-container">
+            <button class = "dot"><img src="assets/green-dot.svg">Early Access Now Open</button>
+
+            <h1 class ="hero-head">Structured Thinking,<br>
+                <span class="hero-green">Not just Note-Taking.</span>
+            </h1>
+
+            <p class="hero-sub">
+                A private space to store notes, links, and learning summaries —— designed to<br>
+                help you think clearly, connect ideas, and turn learning into long-term knowledge.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-nav">Start Building Your Vault <img src ="assets/ArrowRight.png"></button>
+                <button class = "btn-hero2"> ▶ See How It Works</button>
+            </div>
+        </div>      
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Manually reset all default styles */
+    /*Box sizing to border-box for easier sizing calculations*/
+    /*background color not used here to avoid overriding specific element backgrounds*/
+}
+
+body {
+    font-family: "Inter", sans-serif; /* Use Inter font for modern look */
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6; /*line height for better readability. 1.6 is a common value */
+    /* Basic body styles for readability */
+}
+
+/* Styles for header section and Navbar. */
+
+header{
+    margin: 16px 120px;
+    
+
+}           
+
+.navbar{
+    display: flex;
+    justify-content: space-between; /* Flexbox for horizontal layout */
+    align-items: center; /* Center items vertically with flexbox */
+}
+
+.nav-links{
+    list-style: none; /* Remove default list styling like bullets from using <li> */
+    justify-content: space-between; /*justify content effects on flex containers. Used for horizontal alignment of flex items*/
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 32px; /* Space between links */
+    
+}
+
+.nav-links a{
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-weight: 600; /* Semi-bold font weight based on figma*/
+}
+
+.btn-nav{
+    padding: 12.5px 16px; /* Padding inside button border */
+    background-color: #279e59; 
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor pops on hover */
+    font-weight: 400; 
+}
+
+/* Styles for Banner/Hero position.*/
+
+
+
+
+#banner {
+    background: url("assets/hero-bg.png") center/cover no-repeat;
+    padding: 70px 120px 134px 120px; /* Padding inside banner for spacing */
+    z-index: -1; /* Ensure banner is behind other content */    
+    
+}
+
+.hero-container{
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    /*reason for using align-items and justify-content is to center the content both vertically and horizontally*/
+   
+}
+
+.hero-container > .hero-head{
+    font-size: 70px; /* Large font size for hero heading */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: white;
+    margin-bottom: 32px;/* Margin around hero content */
+}
+
+.hero-green{
+    color: #30B868;
+}
+.hero-container > .hero-sub{
+    font-size: 18px; /* Subtext font size */
+    color: white; /* Subtext color */
+    line-height: 1.5; /* Line height for readability */
+    font-weight: 300;
+    margin-bottom: 32px
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn-hero2{
+    padding: 12.5px 40px; /* Padding inside button border */
+    background-color: transparent; 
+    color: white; /* Button text color */
+    border: 1.5px solid white; 
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor pops on hover */
+    font-weight: 400; 
+}
+
+.hero-container > .dot{
+    border-radius: 20px;
+    padding: 10px 34px;
+    color: #239e56;
+    font-weight: 500;
+}
+
+.hero-container > .dot> img{
+    margin-right: 8px;
+}
