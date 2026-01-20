@@ -242,3 +242,43 @@ Flexbox is used for centering. Use above method for stable config. Doesn't effec
 }
 
 
+/*Style for Early Access Section*/
+
+#early-access{
+
+    margin: 0px 120px 120px 120px;
+    padding: 80px 40px;
+    border: 1px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.early-access-container{
+    text-align: center;
+}
+
+.early-access-container > h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.btn-nav-access{
+    padding: 12.5px 16px; /* Padding inside button border */
+    background-color: #279e59; 
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor pops on hover */
+    font-weight: 400;
+    
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 14px;
+}
+
+.early-access-container > p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+    margin-bottom: 32px;
+}
