@@ -125,12 +125,14 @@ header{
 .Main-note{
     text-align: center;
     margin-bottom: 50px;
+    
 
 }
 .Main-note h1{
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 16px;
+    Margin-top: 45px;
 }
 
 .Main-note h6{
@@ -147,22 +149,96 @@ header{
 }
 
 /* Individual card */
-.card{
-    border: 1px;
-    border-radius: 8px;
-    padding: 20px;
+.card {
     background-color: white;
+    border-radius: 12px;
+    padding: 28px 28px;
+    width: 260px;
 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /*THIS centers the icon div */
 }
+
 
 /* Icon circle */
-.icon{
+.icon {
     width: 50px;
-    height: 50px; /*width and height kept same for circle*/
-    border-radius: 25px; /* Half of width/height for perfect circle. Without it, the element would be a rectangle */
-
+    height: 50px;
+    border-radius: 50%;
     background-color: #F95555;
+
     display: flex;
-    padding: 10px; 
+    align-items: center;
+    justify-content: center;
+
     margin-bottom: 16px;
 }
+
+
+/*Important: Padding for center positioning is wrong use. Use padding for breathing internal space.
+Flexbox is used for centering. Use above method for stable config. Doesn't effect other elements stability.*/
+
+.card h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.card > p{
+
+    font-size: 10px;
+    font-weight: 400;
+    color: #555555;
+    text-align: center;
+}
+
+.card > h3 br {
+    align-items: center;
+}
+
+/*Second Brain Section*/
+
+#brain{
+    padding: 100px;
+
+}
+
+.brain-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.brain-sub{
+    color:  #239e56;
+    font-size: 1.5rem;
+}
+
+.right-brain-card > h1{
+    margin: 16px 0px;
+}
+
+.right-brain-card > p{
+    margin-bottom: 24px;
+    color: #555555;
+    font-weight:320;
+}
+
+.brain-list{
+    list-style: none;
+
+}
+
+.brain-list li{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
