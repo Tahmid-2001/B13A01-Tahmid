@@ -202,9 +202,10 @@ Flexbox is used for centering. Use above method for stable config. Doesn't effec
 /*Second Brain Section*/
 
 #brain{
-    padding: 100px;
+    padding-bottom: 100px;
 
 }
+
 
 .brain-container{
     display: flex;
@@ -281,4 +282,87 @@ Flexbox is used for centering. Use above method for stable config. Doesn't effec
     font-weight: 400;
     color: #808080;
     margin-bottom: 32px;
+}
+
+/*Styles for Footer section*/
+
+/* Footer */
+
+#footer {
+    background: #001931;
+    padding: 60px 120px 40px;
+    color: #ffffff;
+}
+
+/* Top row */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Social section */
+.footer-social {
+    text-align: right;
+}
+
+.footer-social p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 20px;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+/* Divider */
+.footer-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 40px 0 20px;
+}
+
+/* Copyright */
+.footer-copy {
+    text-align: center;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+
+.footer-social p{
+    text-align: left;
+}
+
+.social-icons a{
+
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
