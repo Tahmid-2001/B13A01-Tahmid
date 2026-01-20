@@ -9,7 +9,7 @@
 
 body {
     font-family: "Inter", sans-serif; /* Use Inter font for modern look */
-    background-color: #ffffff;
+    background-color: whitesmoke; /* Light background color for contrast */
     color: #333;
     line-height: 1.6; /*line height for better readability. 1.6 is a common value */
     /* Basic body styles for readability */
@@ -18,9 +18,7 @@ body {
 /* Styles for header section and Navbar. */
 
 header{
-    margin: 16px 120px;
-    
-
+    margin: 16px 120px;   
 }           
 
 .navbar{
@@ -116,4 +114,55 @@ header{
 
 .hero-container > .dot> img{
     margin-right: 8px;
+}
+
+
+/* Notes section */
+#Notes-container{
+    padding: 0px 120px 120px 120px
+}
+
+.Main-note{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.Main-note h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.Main-note h6{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+/* Card layout */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual card */
+.card{
+    border: 1px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+/* Icon circle */
+.icon{
+    width: 50px;
+    height: 50px; /*width and height kept same for circle*/
+    border-radius: 25px; /* Half of width/height for perfect circle. Without it, the element would be a rectangle */
+
+    background-color: #F95555;
+    display: flex;
+    padding: 10px; 
+    margin-bottom: 16px;
 }
